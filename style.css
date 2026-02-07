@@ -1,0 +1,110 @@
+body {
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  width: 340px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.card.big {
+  width: 420px;
+}
+
+h1 {
+  color: #e6005c;
+}
+
+button {
+  background: #ff4d79;
+  border: none;
+  padding: 12px 22px;
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background: #e6005c;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+.btn-box {
+  position: relative;
+  height: 80px;
+}
+
+#noBtn {
+  position: absolute;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+}
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  margin: 20px auto;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  border-radius: 15px;
+  animation: fade 1s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 77, 121, 0.8);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 8px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev { left: 5px; }
+.next { right: 5px; }
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
